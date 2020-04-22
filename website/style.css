@@ -1,0 +1,119 @@
+body{
+    background: #f0f0f2;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* for small devices */
+#app{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    background-color: #fdfdff;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    /*border: red solid 1px;*/
+}
+
+.holder{
+    /*border: green solid 2px;*/
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+label{
+    display:block;
+    font-size: 27px;
+}
+
+/* for heading part */
+h1{
+    color: dimgrey;
+}
+
+/* for zip code enter part */
+#zip{
+    border: lightslategray solid 1px;
+    border-radius: 0.5em;
+    padding: 15px;
+}
+input{
+    display:block;
+    height: 60px;
+    width: fit-content;
+    border: lightslategray solid 1px;
+    border-radius: 0.5em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+
+/* for feeling enter part */
+.feel_box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#feelings{
+    width: auto;
+    padding: 15px;
+}
+textarea{
+    border: lightslategray solid 1px;
+    border-radius: 0.5em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+#generate{
+    width: fit-content;
+
+}
+
+/* for most recent entry part */
+.entry{
+    background: lightgray;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* for median or large devices*/
+@media (min-width: 800px) {
+    #app{
+        display: flex;
+        flex-flow: column wrap;
+
+        /* different than small devices */
+        margin-left: 7em;
+        margin-right: 7em;
+        padding: 2em;
+        /* end different */
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
