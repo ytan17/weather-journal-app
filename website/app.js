@@ -35,7 +35,7 @@ async function performAction(e) {
             })
         )
         .then(
-            updateUI()
+            updateUI
         )
 }
 
@@ -56,24 +56,33 @@ const getWeatherJournal = async(baseURL, zipCode, apiKey) => {
 // post method
 const postWeatherJournal = async(url = '', data = {}) => {
     console.log('postData', data);
-    const response = await fetch(url,{
+    const response = await fetch(url, {
         method: 'POST',
         credentials: 'same-origin',
-        headers:{
+        headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(data), // body data type must match "Content-Type" header
     });
-    try{
+
+    try {
         const newData = await response.json();
-        console.log('postData', newData);
         return newData;
-    }catch (e) {
-        console.log('error', e);
+    }catch(error) {
+        console.log("error", error);
     }
 };
 
+
 // update UI method
-function updateUI() {
-    return undefined;
+const updateUI = async() =>{
+    const request = await fetch('/addData');
+    try{
+        const allData = await request.json();
+        document.getElementById('data').innerHTML = allData[-1].date;
+        document.getElementById('temp').innerHTML = allData[-1].temperature;
+        document.getElementById('content').innerHTML = allData[-1].userResponse;
+    }catch (e) {
+        console.log('error', e);
+    }
 }
