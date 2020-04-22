@@ -76,7 +76,7 @@ const postWeatherJournal = async(url = '', data = {}) => {
 
 // update UI method
 const updateUI = async() =>{
-    const request = await fetch('/addData');
+    const request = await fetch('/data');
     try{
         const allData = await request.json();
         document.getElementById('data').innerHTML = allData[-1].date;
