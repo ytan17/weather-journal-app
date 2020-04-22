@@ -39,7 +39,7 @@ function listening() {
 app.get('/all', sendData);
 function sendData(request, response) {
     // return the projectData object
-    response.send("projectData");
+    response.send(projectData);
 }
 
 // post route

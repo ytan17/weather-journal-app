@@ -76,12 +76,14 @@ const postWeatherJournal = async(url = '', data = {}) => {
 
 // update UI method
 const updateUI = async() =>{
-    const request = await fetch('/data');
+    const request = await fetch('/all');
+    console.log('updateUIRequest', request);
     try{
         const allData = await request.json();
-        document.getElementById('data').innerHTML = allData[-1].date;
-        document.getElementById('temp').innerHTML = allData[-1].temperature;
-        document.getElementById('content').innerHTML = allData[-1].userResponse;
+        const last = allData.length - 1;
+        document.getElementById('data').innerHTML = allData[last].date;
+        document.getElementById('temp').innerHTML = allData[last].temperature;
+        document.getElementById('content').innerHTML = allData[last].userResponse;
     }catch (e) {
         console.log('error', e);
     }
