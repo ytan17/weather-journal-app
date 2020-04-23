@@ -70,7 +70,7 @@ const updateUI = async() =>{
     try{
         const allData = await request.json();
         const last = allData.length - 1;
-        document.getElementById('data').innerHTML = allData[last].date;
+        document.getElementById('date').innerHTML = allData[last].date;
         document.getElementById('temp').innerHTML = allData[last].temperature;
         document.getElementById('content').innerHTML = allData[last].userResponse;
     }catch (e) {
