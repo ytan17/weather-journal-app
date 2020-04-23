@@ -4,6 +4,8 @@
     <list default="true" id="50b65291-0a54-43c3-9583-56ab7f088e4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +34,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/website/index.html" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/weather-journal-app/website/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser url="http://localhost:8000" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,6 +72,7 @@
       <workItem from="1587601497452" duration="1208000" />
       <workItem from="1587650389091" duration="197000" />
       <workItem from="1587650834603" duration="2216000" />
+      <workItem from="1587669850810" duration="4881000" />
     </task>
     <servers />
   </component>
@@ -63,14 +83,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587505776104">
+    <state x="360" y="90" key="#Web_Browsers" timestamp="1587670376702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1587505776104" />
+    <state x="360" y="90" key="#Web_Browsers/0.0.1536.864@0.0.1536.864" timestamp="1587670376702" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587670618069">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1587670618069" />
     <state x="355" y="26" key="CommitChangelistDialog2" timestamp="1587586080132">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="355" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587586080132" />
+    <state x="548" y="173" key="FileChooserDialogImpl" timestamp="1587670386997">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587670386997" />
     <state width="1515" height="223" key="GridCell.Tab.0.bottom" timestamp="1587564850356">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -87,6 +115,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1515" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1587564850356" />
+    <state x="277" y="74" key="SettingsEditor" timestamp="1587670163744">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="74" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1587670163744" />
     <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587586073192">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

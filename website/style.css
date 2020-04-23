@@ -8,14 +8,13 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: start;
-    margin-left: 1em;
-    margin-right: 1em;
     padding: 1em;
     background-color: #fdfdff;
     border-radius: 0.5em;
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    min-height: 100vh;
     /*border: red solid 1px;*/
 }
 
@@ -50,7 +49,6 @@ input{
     border-radius: 0.5em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    border: none;
 }
 
 
@@ -77,7 +75,15 @@ textarea{
 
 /* for most recent entry part */
 .entry{
-    background: lightgray;
+    background: #f0f0f2;
+    border: lightslategray solid 1px;
+    border-radius: 0.5em;
+    padding: 15px;
+}
+
+hr{
+    order: 1;
+    border: red solid 2px;
 }
 
 /* Style for Placeholder Text*/

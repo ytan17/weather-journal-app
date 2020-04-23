@@ -1,7 +1,7 @@
 /* Global Variables */
-let baseURL = "http://api.openweathermap.org/data/2.5/weather?";
-let OpenWeatherApiKey = "edc8da4ad2db633b4f4474a6434dfc6a";
-let apiKey = `&appid=${OpenWeatherApiKey}`;
+const baseURL = "http://api.openweathermap.org/data/2.5/weather?";
+const OpenWeatherApiKey = "edc8da4ad2db633b4f4474a6434dfc6a";
+const apiKey = `&appid=${OpenWeatherApiKey}`;
 
 // Click Event handler for generate button
 document.getElementById('generate').addEventListener('click', performAction);
@@ -33,9 +33,12 @@ async function performAction(e) {
 
 // get method
 const getWeatherJournal = async(baseURL, zipCode, apiKey) => {
+    console.log('baseURLithAPIkey_getWeatherJournal', baseURL+zipCode+apiKey);
     const request = await fetch(baseURL+zipCode+apiKey);
     try{
         const weatherJournalData = await request.json();
+        console.log('weatherJournalData_getWeatherJournal', weatherJournalData);
+        console.log('temperature_getWeatherJournal', weatherJournalData.main['temp']);
         return weatherJournalData;
     }catch (e) {
         console.log('error', e);
@@ -44,7 +47,7 @@ const getWeatherJournal = async(baseURL, zipCode, apiKey) => {
 
 // post method
 const postWeatherJournal = async(url = '', data = {}) => {
-    console.log('postData', data);
+    console.log('postData_postWeatherJournal', data);
     const response = await fetch(url, {
         method: 'POST',
         credentials: 'same-origin',
@@ -56,6 +59,7 @@ const postWeatherJournal = async(url = '', data = {}) => {
 
     try {
         const newData = await response.json();
+        console.log('newData_postWeatherJournal', newData);
         return newData;
     }catch(error) {
         console.log("error", error);
@@ -66,7 +70,7 @@ const postWeatherJournal = async(url = '', data = {}) => {
 // update UI method
 const updateUI = async() =>{
     const request = await fetch('/all');
-    console.log('updateUIRequest', request);
+    console.log('updateUIRequest_updateUI', request);
     try{
         const allData = await request.json();
         const last = allData.length - 1;
