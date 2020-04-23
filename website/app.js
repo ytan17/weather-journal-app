@@ -76,4 +76,4 @@ const updateUI = async() =>{
     }catch (e) {
         console.log('error', e);
     }
-}
+};
