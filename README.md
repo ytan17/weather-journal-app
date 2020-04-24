@@ -1,12 +1,12 @@
 # Weather-Journal App Project
 
 ## Overview
-This is an asynchronous web app that uses Web API and user data to dynamically update the UI. Users enter zipcode and today's feeling. Then the page will dynamically update with the most recent entry with today's date, today's temperature, and today's feeling.
+This is an asynchronous web app that uses Web API and user data to dynamically update the UI. Users enter zipcode and today's feelings. Then the page will dynamically update with the most recent entry with today's date, today's temperature, and today's feelings.
 
 
-## Instailation
-1. Download the source file in github
-2. In terminate: `npm run start` -- need to have node.js instail first
+## Installation
+1. Download the source file in Github
+2. In terminate: `npm run start` -- need to have node.js install first
 3. On browser: run http://localhost:8000/
 
 ## API Credentials
