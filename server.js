@@ -1,6 +1,14 @@
-// Setup empty JS object to act as endpoint for all routes
+/**
+ * Setup empty JS object to act as endpoint for all routes
+ *
+ */
 projectData = [];
 
+
+/**
+ * set up environment
+ *
+ */
 // Require Express to run server and routes
 const express = require('express');
 // Start up an instance of app
@@ -19,7 +27,10 @@ app.use(cors());
 app.use(express.static('website'));
 
 
-// Setup Server
+/**
+ * set up server
+ *
+ */
 const port = 8000;
 const server = app.listen(port, listening);
 function listening() {
@@ -27,7 +38,11 @@ function listening() {
 };
 
 
-// Get route
+/**
+ * Get route
+ *
+ */
+
 /**
  * problem: Unresolved function or method get()
  * solution: The problem is that these properties are not defined in Express module
@@ -42,7 +57,11 @@ function sendData(request, response) {
     response.send(projectData);
 }
 
-// post route
+
+/**
+ * post route
+ *
+ */
 app.post('/addData', addData);
 function addData(request, response) {
     const newWeatherJournal = {

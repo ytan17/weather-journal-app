@@ -1,10 +1,17 @@
 body{
-    background: #f0f0f2;
+    background-image: url("image/weatherBackground.jpg");
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    z-index: 1;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* for small devices */
 #app{
+    z-index: 999;
     display: flex;
     flex-flow: column wrap;
     justify-content: start;
@@ -31,7 +38,7 @@ label{
 }
 
 /* for heading part */
-h1{
+.display-4{
     color: dimgrey;
 }
 
@@ -80,10 +87,25 @@ textarea{
     border-radius: 0.5em;
     padding: 15px;
 }
-
-hr{
-    order: 1;
-    border: red solid 2px;
+.title{
+    border-bottom: dodgerblue solid 2px;
+}
+#entryHolder{
+    padding-top: 10px;
+    min-height: 15vh;
+    display: grid;
+    grid-template-areas:
+            'date temp temp temp'
+            'cont cont cont cont ';
+}
+#date{
+    grid-area: date;
+}
+#temp{
+    grid-area: temp;
+}
+#content{
+    grid-area: cont;
 }
 
 /* Style for Placeholder Text*/
@@ -110,7 +132,6 @@ hr{
     #app{
         display: flex;
         flex-flow: column wrap;
-
         /* different than small devices */
         margin-left: 7em;
         margin-right: 7em;

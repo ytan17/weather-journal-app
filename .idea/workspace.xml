@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b65291-0a54-43c3-9583-56ab7f088e4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/website/image/weatherBackground.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/style.css" afterDir="false" />
@@ -38,6 +40,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ki451\Desktop\SelfStudy\Udacity_Front_End\weather-journal-app\website" />
+      <recent name="C:\Users\ki451\Desktop\SelfStudy\Udacity_Front_End\weather-journal-app\image" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/weather-journal-app/website/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -72,7 +80,7 @@
       <workItem from="1587601497452" duration="1208000" />
       <workItem from="1587650389091" duration="197000" />
       <workItem from="1587650834603" duration="2216000" />
-      <workItem from="1587669850810" duration="4881000" />
+      <workItem from="1587669850810" duration="13411000" />
     </task>
     <servers />
   </component>
